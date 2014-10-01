@@ -23,7 +23,7 @@ HTML and LaTeX exporters are shown by default. We add the Markdown exporter to t
 ;; (org-ac/config-default)
 
 ;; Markdown exporter
-(require 'ox-md)
+;;(require 'ox-md)
 
 (setq org-completion-use-ido t)
 ;; (require 'org-special-blocks)
