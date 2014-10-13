@@ -1,0 +1,22 @@
+#+TITLE: Starter Kit Jvm
+#+OPTIONS: toc:nil num:nil ^:nil
+
+This is part of the [[file:starter-kit.org][Emacs Starter Kit]]. 
+
+This file provides settings for Jvm languages like Java and Groovy. 
+
+* Groovy and Java
+   Load Groovy mode
+   
+** Load groovy-mode 
+#+src-name: groovy-mode
+#+begin_src emacs-lisp
+        (autoload 'groovy-mode "groovy-mode" "Major mode for editing Groovy code." t)
+        (add-to-list 'auto-mode-alist '("\.groovy$" . groovy-mode))
+        (add-to-list 'auto-mode-alist '("\.gradle$" . groovy-mode))
+        ;; Make Groovy mode electric by default.
+        (add-hook 'groovy-mode-hook
+                  '(lambda ()
+                     (require 'groovy-electric)
+                     (groovy-electric-mode)))
+#+end_src

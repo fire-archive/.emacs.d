@@ -470,6 +470,12 @@ Located in [[file:starter-kit-stats.org][starter-kit-stats]]
 #+begin_src emacs-lisp
   (starter-kit-load "starter-kit-stats.org")
 #+end_src
+*** Starter Kit JVM Language
+Located in [[file:starter-kit-stats.org][starter-kit-jvm]]
+
+#+begin_src emacs-lisp
+  (starter-kit-load "starter-kit-jvm.org")
+#+end_src
 
 *** Starter Kit Text
 Located in [[file:starter-kit-text.org][starter-kit-text]]
