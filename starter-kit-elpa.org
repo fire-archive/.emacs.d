@@ -69,9 +69,9 @@ The following packages will be downloaded and installed.
                                 'zenburn-theme
                                 'auctex
                                 'ess
-                                'r-autoyas
-                                'stan-snippets                                                             
-                                )
+                                'r-autoyas 
+								'google-c-style
+                                'r-autoyas                                                             
     "Libraries that should be installed by default.")
 #+end_src
 
