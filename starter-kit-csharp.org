@@ -1,0 +1,16 @@
+#+TITLE: Starter Kit C Sharp
+#+OPTIONS: toc:nil num:nil ^:nil
+
+This is part of the [[file:starter-kit.org][Emacs Starter Kit]].
+
+* Starter Kit C Sharp
+Helpers for the C# programming language.
+
+#+begin_src emacs-lisp
+(add-to-list 'auto-mode-alist '("\\.cs" . csharp-mode))
+#+end_src
+
+#+source: message-line
+#+begin_src emacs-lisp
+  (message "Starter Kit C Sharp loaded.")
+#+end_src
