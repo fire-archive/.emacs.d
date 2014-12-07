@@ -30,7 +30,7 @@ Finally, the [[*Local%20Org-mode%20XeLaTeX%20Export%20Settings][Local Org-mode X
  delete the lines.
 
 ** Local Miscellaneous Settings
-*** Use Google cstyle
+*** Use Google c-style
 #+srcname: google-c-style-settings
 #+begin_src emacs-lisp
 (require 'google-c-style)
@@ -178,27 +178,26 @@ Set up AUCTeX to work with the Skim PDF viewer.
 
 #+srcname: sync
 #+begin_src emacs-lisp
-        ;; Synctex with Skim
-        (add-hook 'TeX-mode-hook
-        (lambda ()
-        (add-to-list 'TeX-output-view-style
-        '("^pdf$" "."
-         "/Applications/Skim.app/Contents/SharedSupport/displayline %n %o %b")))
-         )
-        
-      (setq TeX-view-program-selection '((output-pdf "PDF Viewer")))
-      (setq TeX-view-program-list
-           '(("PDF Viewer" "/Applications/Skim.app/Contents/SharedSupport/displayline -b -g %n %o %b")))
-         
-        ;; Make emacs aware of multi-file projects
-        ;; (setq-default TeX-master nil)
-        
-        ;; Auto-raise Emacs on activation (from Skim, usually)
-        (if (eq system-type 'darwin)
-          (defun raise-emacs-on-aqua()
-          (shell-command "osacript -e 'tell application \"Emacs\" to activate' &"))
-          (add-hook 'server-switch-hook 'raise-emacs-on-aqua)
-        )
+    ;; Synctex with Skim
+    (add-hook 'TeX-mode-hook
+    (lambda ()
+    (add-to-list 'TeX-output-view-style
+    '("^pdf$" "."
+     "/Applications/Skim.app/Contents/SharedSupport/displayline %n %o %b")))
+     )
+    
+  (setq TeX-view-program-selection '((output-pdf "PDF Viewer")))
+  (setq TeX-view-program-list
+       '(("PDF Viewer" "/Applications/Skim.app/Contents/SharedSupport/displayline -b -g %n %o %b")))
+     
+    ;; Make emacs aware of multi-file projects
+    ;; (setq-default TeX-master nil)
+      (defun raise-emacs-on-aqua()
+      (shell-command "osacript -e 'tell application \"Emacs\" to activate' &"))
+    ;; Auto-raise Emacs on activation (from Skim, usually)
+    (if (eq system-type 'darwin)
+      (add-hook 'server-switch-hook 'raise-emacs-on-aqua)
+    )
 #+end_src
 
 *** Local RefTeX Settings
