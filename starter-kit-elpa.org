@@ -40,6 +40,8 @@ The following packages will be downloaded and installed.
                                 'latex-pretty-symbols
                                 ;; 'mac-key-mode
                                 'magit
+                                'git-commit-mode
+                                'git-rebase-mode
                                 'markdown-mode
                                 'maxframe
                                 'multiple-cursors
@@ -53,12 +55,14 @@ The following packages will be downloaded and installed.
                                 'redo+
                                 ;; 'ruby-mode
                                 'smartparens 
-                                'smex
+                                'smex 
                                 'solarized-theme
                                 'stan-mode
                                 'tango-2-theme
+                                'flatui-theme
+                                'color-theme-railscasts 
                                 'textmate
-                                'typopunct
+                                'typopunct 
                                 'visual-regexp
                                 'yaml-mode
                                 'yasnippet
