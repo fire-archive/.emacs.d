@@ -1,0 +1,18 @@
+#+TITLE: Starter Kit Elixir
+#+OPTIONS: toc:nil num:nil ^:nil
+
+This is part of the [[file:starter-kit.org][Emacs Starter Kit]].
+
+* Starter Kit Elixir
+Helpers for the Elixir programming language.
+
+#+begin_src emacs-lisp
+(require elixir-mode)
+(add-to-list 'auto-mode-alist '("\\.ex[s]" . elixir-mode))
+(add-to-list 'auto-mode-alist '("\\.elixir" . elixir-mode))
+#+end_src
+
+#+source: message-line
+#+begin_src emacs-lisp
+  (message "Starter Kit Elixir Sharp loaded.")
+#+end_src
