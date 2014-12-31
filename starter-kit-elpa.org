@@ -69,7 +69,7 @@ The following packages will be downloaded and installed.
                                 'zenburn-theme
                                 'auctex
                                 'ess
-								'elixir-mode
+                                'go-mode
     "Libraries that should be installed by default.")
 #+end_src
 
