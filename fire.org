@@ -31,13 +31,26 @@ Finally, the [[*Local%20Org-mode%20XeLaTeX%20Export%20Settings][Local Org-mode X
 
 ** Local Miscellaneous Settings
 *** Use Google c-style
-#+srcname: google-c-style-settings
-#+begin_src emacs-lisp
+Disabled:
+
++srcname: google-c-style-settings
++begin_src emacs-lisp
 (require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
++end_src
+*** Tab settings
+#+srcname: tab-settings
+#+begin_src emacs-lisp
+(setq default-tab-width 4)
 #+end_src
-
+*** Use bsd c-style
+#+srcname: bsd-c-style-settings
+#+begin_src emacs-lisp
+(defun my-c-mode-hook ()
+  (setq c-default-style "bsd"))
+(add-hook 'c-mode-common-hook 'my-c-mode-hook)
+#+end_src
 *** Color Theme Tweaks
 The theme package is loaded in =starter-kit-misc.org=. The settings
 here adjust the height of some headings in Org and LaTeX mode, as well
