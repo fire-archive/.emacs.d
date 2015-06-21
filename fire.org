@@ -570,9 +570,6 @@ Some last tweaks.
 
 #+srcname: final-custom
 #+begin_src emacs-lisp
-  ;; Add menu back
-  (menu-bar-mode 1)
-
   ;; Line-spacing tweak 
   (setq-default line-spacing 1)
 
