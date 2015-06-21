@@ -288,10 +288,15 @@ Load up [[http://tromey.com/elpa/][ELPA]], the Emacs Lisp package manager.
 
 #+srcname: starter-kit-elpa
 #+begin_src emacs-lisp 
+  (require 'package)
+  (setq package-archives
             '(
-          ("org"         . "http://orgmode.org/elpa/")
-              ("gnu"         . "http://elpa.gnu.org/packages/")
-  
+             ("org"         . "http://orgmode.org/elpa/")
+             ("gnu"         . "http://elpa.gnu.org/packages/")
+             ("melpa" . "http://melpa.org/packages/")
+             ("marmalade" . "http://marmalade-repo.org/packages/")
+             ))
+  (package-initialize)
 
 ;;; Add support to package.el for pre-filtering available packages
 (defvar package-filter-function nil
@@ -320,7 +325,7 @@ ARCHIVE is the string name of the package archive.")
     ad-do-it))
 
 (defvar melpa-exclude-packages
-      '(slime magit)
+    '() ;;'(slime magit)
   "Don't install Melpa versions of these packages.")
 
 ;; Don't take Melpa versions of certain packages
