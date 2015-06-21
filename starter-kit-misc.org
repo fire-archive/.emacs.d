@@ -56,7 +56,7 @@ loading the =zenburn= and =anti-zenburn= themes.
         xterm-mouse-mode t
         save-place-file (concat dotfiles-dir "places"))
 #+end_src
-
+   
 ** Turn on Minimal mode
 Thin window dividers and no scroll bars. Toggle with `C-c C-s`.
 

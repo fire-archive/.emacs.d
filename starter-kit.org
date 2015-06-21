@@ -354,7 +354,7 @@ raw emacs-lisp files or as embedded elisp in org-mode files (as done
 in this document).
 
 #+srcname: starter-kit-user/system-setup
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp
   (setq system-specific-config (concat dotfiles-dir system-name ".el")
         system-specific-literate-config (concat dotfiles-dir system-name ".org")
         user-specific-config (concat dotfiles-dir user-login-name ".el")

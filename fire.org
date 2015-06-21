@@ -42,14 +42,19 @@ Disabled:
 *** Tab settings
 #+srcname: tab-settings
 #+begin_src emacs-lisp
-(setq default-tab-width 4)
+  (setq-default tab-width 4) ; or any other preferred value
+  (setq-default default-tab-width 4)
+  (defvaralias 'c-basic-offset 'tab-width)
+  (defvaralias 'cperl-indent-level 'tab-width)
 #+end_src
-*** Use bsd c-style
-#+srcname: bsd-c-style-settings
+*** Use c-style
+#+srcname: c-style-settings
 #+begin_src emacs-lisp
-(defun my-c-mode-hook ()
-  (setq c-default-style "bsd"))
-(add-hook 'c-mode-common-hook 'my-c-mode-hook)
+  (defun my-c-mode-hook ()
+        (setq c-default-style "linux"
+         c-basic-offset 4
+         c-indent-level 4))
+    (add-hook 'c-mode-common-hook 'my-c-mode-hook)
 #+end_src
 *** Color Theme Tweaks
 The theme package is loaded in =starter-kit-misc.org=. The settings
@@ -559,6 +564,9 @@ Some last tweaks.
 
 #+srcname: final-custom
 #+begin_src emacs-lisp
+  ;; Add menu back
+  (menu-bar-mode 1)
+
   ;; Line-spacing tweak 
   (setq-default line-spacing 1)
 
@@ -596,4 +604,4 @@ Some last tweaks.
 #+source: message-line
 #+begin_src emacs-lisp
   (message "Starter Kit User File loaded.")
-#+end_src
+#+end_
