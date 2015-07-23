@@ -7,7 +7,6 @@ This is part of the [[file:starter-kit.org][Emacs Starter Kit]].
 Helpers for the Elixir programming language.
 
 #+begin_src emacs-lisp
-(require elixir-mode)
 (add-to-list 'auto-mode-alist '("\\.ex[s]" . elixir-mode))
 (add-to-list 'auto-mode-alist '("\\.elixir" . elixir-mode))
 #+end_src

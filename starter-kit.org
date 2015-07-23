@@ -439,6 +439,12 @@ Located in [[file:starter-kit-lisp.org][starter-kit-lisp]]
 (starter-kit-load "starter-kit-lisp.org")
 #+end_src
 
+*** Starter kit Elixir
+Located in [[file:starter-kit-js.org][starter-kit-elixir]]
+
+#+begin_src emacs-lisp
+(starter-kit-load "starter-kit-elixir.org")
+#+end_src
 *** Starter kit JS
 Located in [[file:starter-kit-js.org][starter-kit-js]]
 
