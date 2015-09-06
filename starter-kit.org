@@ -452,6 +452,13 @@ Located in [[file:starter-kit-js.org][starter-kit-js]]
 (starter-kit-load "starter-kit-js.org")
 #+end_src
 
+*** Starter kit Qml
+Located in [[file:starter-kit-js.org][starter-kit-qml]]
+
+#+begin_src emacs-lisp
+(starter-kit-load "starter-kit-qml.org")
+#+end_src
+
 *** Starter Kit Perl
 Located in [[file:starter-kit-perl.org][starter-kit-perl]]
 

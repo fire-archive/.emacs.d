@@ -56,6 +56,7 @@ The following packages will be downloaded and installed.
                                 ;; 'ruby-mode
                                 'smartparens 
                                 'smex 
+                                'qml-mode 
                                 'solarized-theme
                                 'stan-mode
                                 'tango-2-theme

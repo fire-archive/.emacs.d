@@ -1,0 +1,19 @@
+#+TITLE: Starter Kit Qml
+#+OPTIONS: toc:nil num:nil ^:nil
+
+This is part of the [[file:starter-kit.org][Emacs Starter Kit]].
+
+* Starter Kit Qml
+Qml Helpers
+
+#+begin_src emacs-lisp 
+(autoload 'qml-mode "qml-mode" "Start qml-mode" t)
+(add-to-list 'auto-mode-alist '("\\.qml$" . qml-mode))
+;; (add-hook 'js-mode-hook 'idle-highlight)
+;; (setq js-indent-level 2)
+#+end_src
+
+#+source: message-line
+#+begin_src emacs-lisp
+  (message "Starter Kit Qml loaded.")
+#+end_src
