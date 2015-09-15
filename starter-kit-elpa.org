@@ -64,6 +64,8 @@ The following packages will be downloaded and installed.
                                 ;;'color-theme-railscasts 
                                 'textmate
                                 'lenlen-theme
+                                'monokai-theme
+                                'color-theme-sanityinc-tomorrow
                                 'color-theme-solarized
                                 ;;'typopunct
                                 'visual-regexp
