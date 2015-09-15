@@ -50,7 +50,7 @@ The following packages will be downloaded and installed.
                                 'pos-tip
                                 'powerline
                                 'python-mode
-                                'ipython
+                                ;;'ipython
                                 'jedi
                                 'redo+
                                 ;; 'ruby-mode
@@ -61,9 +61,9 @@ The following packages will be downloaded and installed.
                                 'stan-mode
                                 'tango-2-theme
                                 'flatui-theme
-                                'color-theme-railscasts 
+                                ;;'color-theme-railscasts 
                                 'textmate
-                                'typopunct 
+                                ;;'typopunct
                                 'visual-regexp
                                 'yaml-mode
                                 'elixir-mode
