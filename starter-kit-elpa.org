@@ -58,12 +58,13 @@ The following packages will be downloaded and installed.
                                 'smex 
                                 'qml-mode 
                                 ;;'solarized-theme
-                                'color-theme-solarized
                                 'stan-mode
                                 'tango-2-theme
                                 'flatui-theme
                                 ;;'color-theme-railscasts 
                                 'textmate
+                                'lenlen-theme
+                                'color-theme-solarized
                                 ;;'typopunct
                                 'visual-regexp
                                 'yaml-mode
