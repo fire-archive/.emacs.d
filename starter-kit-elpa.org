@@ -79,7 +79,10 @@ The following packages will be downloaded and installed.
                                 'stan-snippets
                                 'ctags-update
                                 'csharp-mode
-                                'go-mode)
+                                'go-mode
+                                'php-mode
+                                )
+>>>>>>> Add php mode.
     "Libraries that should be installed by default.")
 #+end_src
 
@@ -125,5 +128,8 @@ Make sure the PATH variable is set properly. (Uses exec-path-from-shell package.
 #+end_src
 #+source: message-line
 #+begin_src emacs-lisp
-  (message "Starter Kit ELPA loaded.")
-#+end_src
+    (message "Starter Kit ELPA loaded.")
+  ,#+end_#+BEGIN_SRC 
+
+#+END_SRC
+
