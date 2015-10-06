@@ -1,0 +1,17 @@
+#+TITLE: Starter Kit Ispc
+#+OPTIONS: toc:nil num:nil ^:nil
+
+This is part of the [[file:starter-kit.org][Emacs Starter Kit]].
+
+* Starter Kit Ispc
+Helpers for ispc - a compiler for a variant of the C programming language, with extensions for "single program, multiple data" (SPMD) programming.
+
+#+begin_src emacs-lisp
+;; (add-to-list 'auto-mode-alist '("\\.ispc" . ispc-mode))
+#+end_src
+
+#+source: message-line
+#+begin_src emacs-lisp
+  (message "Starter Kit Ispc loaded.")
+#+end_src
+
