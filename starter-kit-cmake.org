@@ -1,0 +1,19 @@
+#+TITLE: Starter Kit Cmake
+#+OPTIONS: toc:nil num:nil ^:nil
+
+This is part of the [[file:starter-kit.org][Emacs Starter Kit]].
+
+* Starter Kit Cmake
+Helpers for the CMake text-based build system.
+
+#+begin_src emacs-lisp
+(add-to-list 'auto-mode-alist '("\\.CMakeLists.txt" . cmake-mode))
+#+end_src
+
+#+source: message-line
+#+begin_src emacs-lisp
+  (message "Starter Kit Cmake loaded.")
+#+end_#+BEGIN_SRC 
+
+#+END_SRC
+
