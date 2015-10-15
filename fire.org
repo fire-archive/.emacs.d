@@ -30,6 +30,13 @@ Finally, the [[*Local%20Org-mode%20XeLaTeX%20Export%20Settings][Local Org-mode X
  delete the lines.
 
 ** Local Miscellaneous Settings
+*** Disable fullscreen
+
++srcname: disable-fullscreen-settings
++begin_src emacs-lisp
+(setq ns-use-native-fullscreen nil)
++end_src
+
 *** Use Google c-style
 Disabled:
 
@@ -116,7 +123,7 @@ For use with Yamamoto Mitsuharu's Carbon-patched Emacs. (This is
     what I use, but it requires you compile a custom version of Emacs provided by Mitsuharu.)
 
 #+source: fullscreen-4
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :tangle no
     (defun fullscreen (&optional f)
       (interactive)
       (set-frame-parameter f 'fullscreen
