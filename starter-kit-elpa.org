@@ -52,11 +52,13 @@ The following packages will be downloaded and installed.
                                 'jedi
                                 'redo+
                                 ;; 'ruby-mode
-                                'smartparens 
+                                'smartparens
                                 'smex 
                                 'qml-mode 
                                 ;;'solarized-theme
                                 'stan-mode
+                                'smex
+                                'solarized-theme
                                 'tango-2-theme
                                 'flatui-theme
                                 ;;'color-theme-railscasts 
@@ -80,6 +82,7 @@ The following packages will be downloaded and installed.
                                 'go-mode
                                 'php-mode
                                 'cmake-mode
+                                'r-autoyas          
                                 )
     "Libraries that should be installed by default.")
 #+end_src
