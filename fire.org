@@ -567,6 +567,9 @@ Some last tweaks.
 
 #+srcname: final-custom
 #+begin_src emacs-lisp
+  ;; Don't use git backend  
+  (delete 'Git vc-handled-backends)
+
   ;; Line-spacing tweak 
   (setq-default line-spacing 1)
 
